@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title & Favicon -->
+    <title>Rapid SignIn</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <!-- External CSS Linking -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="split-screen">
+        <section class="left-section">
+            <div class="branding">
+                <div class="logo"></div>
+                <span class="brand-name">CompanyName</span>
+            </div>
+            
+            <div class="hero-text">
+                <h1>Welcome to a more organized workspace</h1>
+                <p>Log in to your account to continue your journey with us and explore our latest features.</p>
+            </div>
+
+            <div class="time-display">
+                Current time (UTC): 2025-02-04 11:40:49
+            </div>
+        </section>
+
+        <section class="right-section">
+            <div class="login-container">
+                <div class="login-header">
+                    <h2>Welcome back</h2>
+                    <p>Please enter your details to sign in</p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            placeholder="••••••••"
+                            autocomplete="current-password"
+                            required
+                        >
+                        <div class="error-message" id="passwordError"></div>
+                    </div>
+
+                    <div class="options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="login-button">Sign in</button>
+
+                    <div class="social-login">
+                        <p>Or continue with</p>
+                        <div class="social-buttons">
+                            <button type="button" class="social-button">
+                                Google
+                            </button>
+                            <button type="button" class="social-button">
+                                GitHub
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
